@@ -1,5 +1,6 @@
 function createHTML(ans) {
-   `<html>
+    console.log(ans)
+    return `<html>
     <!DOCTYPE html>
     <html lang="en">
     <head>

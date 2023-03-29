@@ -76,8 +76,10 @@ inquirer.prompt ([
         name: "internSchool",
     },
 ]).then((ans) => {
-    const renderHTML = createHTML(ans)
-    fs.writeFile("index.HTML",renderHTML, function(err){
+    // const HTML = renderHTML(ans)
+    console.log(ans)
+    console.log(createHTML(ans))
+    fs.writeFile("index.html",createHTML(ans), function(err){
         if (err) console.log("error", err)
     })
 })
